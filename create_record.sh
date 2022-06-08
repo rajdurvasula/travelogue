@@ -1,0 +1,1 @@
+curl -X POST http://localhost:8080/api/travelogue -H 'Content-Type: application/json' -d '{ "title": "serene kunoor views", "description": "A short trip to kunoor hill station", "place": "kunoor", "country": "india" }'
