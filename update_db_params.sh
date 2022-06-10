@@ -8,3 +8,4 @@ sed -i "s~db_host~$1~g" db.config.js
 sed -i "s~db_user~$2~g" db.config.js
 sed -i "s~db_password~$3~g" db.config.js
 cp -f db.config.js config/
+rm -f db.config.js
