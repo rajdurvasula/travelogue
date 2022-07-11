@@ -1,6 +1,6 @@
 module.exports = {
-  HOST: 'db_host',
-  USER: 'db_user',
-  PASSWORD: 'db_password',
+  HOST: 'traveldb.cx3udigcu1jr.us-east-1.rds.amazonaws.com',
+  USER: 'admin',
+  PASSWORD: 'Vz937Wd1u8dP48',
   DB: 'traveldb'
 };
