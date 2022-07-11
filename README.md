@@ -27,7 +27,7 @@ grant all privileges on traveldb.* to 'nodeuser1'@'%';
 ```
 - Script to update Node app's db connection parameters
 ```
-./update_db_params.sh **db_host** **db_user** **db_password**
+./update_db_params.sh db_host db_user db_password
 ```
 - As *root* user 
   - Copy *travelogue.service.tmplt* to */etc/systemd/system/*
