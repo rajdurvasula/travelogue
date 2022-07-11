@@ -2,6 +2,8 @@
 A simple nodejs application with MariaDB/MySQL backend database. This service exposes REST API
 
 ## Setup
+- Create directory: */home/ec2-user/projects*
+- Clone OR Move Git Repo to */home/ec2-user/projects* directory
 - Install node modules
 ```
 npm install
@@ -22,6 +24,18 @@ create user 'nodeuser1'@'%' identified by 'passw0rd';
 - Grant user permissions to *traveldb* database
 ```
 grant all privileges on traveldb.* to 'nodeuser1'@'%';
+```
+- Script to update Node app's db connection parameters
+```
+./update_db_params.sh **db_host** **db_user** **db_password**
+```
+- As *root* user 
+  - Copy *travelogue.service.tmplt* to */etc/systemd/system/*
+  - Reload daemon and start service
+```
+cp /home/ec2-user/projects/travelogue/travelogue.service.tmplt /etc/systemd/system/travelogue.service
+systemctl daemon-reload
+systemctl start travelogue
 ```
 
 ## Test
