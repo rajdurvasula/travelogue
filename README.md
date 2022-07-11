@@ -55,8 +55,9 @@ get_all.sh
 ```
 
 - Get Travel Entry by Id
+  - Expects Argument: id
 ```
-get_by_id.sh
+get_by_id.sh 1
 ```
 
 - Get Travel Entries by Country
